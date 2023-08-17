@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklya | Seus livros você encontra aqui!!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+        :root {
+            --Dark-gray: rgb(29, 29, 29);
+            --Letter-white: #e9e9e9;
+            --blue-color: #214969;
+            --letter-color: #fff;
+            --site-color: beige;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+            color: var(--Dark-gray);
+            overflow-x: hidden;
+            background-color: beige;
+        }
+
+        main {
+            padding: 1rem 0;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .ebook {
+            width: 380px;
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .ebook-img {
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ebook-img img {
+            width: 80%;
+            border-radius: 5px;
+            height: 80%;
+        }
+
+        .ebook-description {
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 0px 5px;
+            width: 60%;
+        }
+
+        .ebook-description h4 {
+            margin: 0;
+        }
+
+        .ebook-description h3 {
+            margin: 0;
+        }
+
+        .ebook-description p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .ebook-description a {
+            font-size: 0.9rem;
+            padding: 10px 15px;
+            border: none;
+            text-decoration: none;
+            border-radius: 5px;
+            font-family: 'Montserrat', sans-serif;
+            cursor: pointer;
+            background-color: #3c3c25;
+            color: var(--letter-color);
+            text-align: center;
+        }
+
+        .ebook-description a:hover {
+            background-color: #0293c4;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem 0rem;
+        }
+
+        .image {
+            max-width: 50%;
+            height: auto;
+        }
+
+        .ebooks {
+            padding: 1rem;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        footer {
+            height: 5%;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #3c3c25;
+            color: var(--letter-color);
+            padding: 1rem 0px;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        #container-footer {
+            width: 80%;
+        }
+
+        #container-footer p {
+            margin: 0;
+            padding-top: 1rem;
+            text-align: center;
+        }
+
+        #autoria {
+            text-align: center;
+        }
+
+        #social-midia {
+            padding-top: 1rem;
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #container-footer a {
+            font-size: 1rem;
+            color: var(--letter-color);
+        }
+
+        .social-midia {
+            font-size: 2rem !important;
+            color: var(--letter-color) !important;
+        }
+
+        @media (min-width: 740px) {
+            .image {
+                max-width: 20%;
+            }
+
+            .ebooks p {
+                max-width: 60%;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="image" src="./img/logo recorte.png" alt="Imagem de destaque">
+    </div>
+    <div class="ebooks">
+        <strong>@booklya</strong>
+        <p>📚 Marca de venda e licenciamento de livros digitais</p>
+    </div>
+    <div class="ebooks">
+        <h2>Explorando Nossos eBooks</h2>
+        <p>Encontre uma coleção diversificada de eBooks para alimentar sua mente e imaginação. Deixe-se envolver por
+            histórias cativantes e conhecimento valioso.</p>
+    </div>
+    <main>
+        <div class="ebook">
+            <div class="ebook-img">
+                <img src="./img/capa do livro.png" alt="imagem">
+            </div>
+            <div class="ebook-description">
+                <h4>Estrátegias e hábitos para alcançar o sucesso</h4>
+                <p>"Desvende o código do sucesso pessoal enquanto...</p>
+                <h3>R$25,00</h3>
+                <a href="#">Comprar</a>
+            </div>
+        </div>
+    </main>
+    <br><br>
+    <footer>
+        <div id="container-footer">
+            <p>Siga-nos nas redes sociais:</p>
+            <div id="social-midia">
+                <a href="https://web.facebook.com/profile.php?id=61550302982832" class="social-midia"><i
+                        class="bi bi-facebook"></i></a>
+                <a href="https://instagram.com/booklya_ebook?igshid=MzRlODBiNWFlZA==" class="social-midia"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCixpWc1hBObudrNuVBD453g" class="social-midia"><i
+                    class="bi bi-youtube"></i></a>
+            </div>
+            <hr id="line">
+            <div id="autoria">
+                <p>&copy; 2023 Booklya. Todos os direitos reservados.</p>
+                <p style="font-size: 18px;">site feito por <a href="https://www.instagram.com/liedson.lb/">Liedson Barros</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

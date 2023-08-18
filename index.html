@@ -174,6 +174,51 @@
                 margin: 0 auto;
             }
         }
+
+.faq {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem 10px;
+}
+
+.question {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+.container-question {
+    display: flex;
+    justify-content: space-between;
+    background: #3c3c25;
+    color: var(--letter-color);
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.question-text {
+  margin: 0;
+}
+.question i {
+    font-size: 1.5rem;
+}
+.answer {
+  display: none;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.answer ul li strong {
+    color: #3c3c25;
+}
+.answer p {
+    width: 90%;
+    margin: 1rem auto;
+    text-align: justify;
+}
+.show {
+    display: block !important;
+}
+
     </style>
 </head>
 <body>
@@ -183,6 +228,46 @@
     <div class="ebooks">
         <strong>@booklya</strong>
         <p>📚 Marca de venda e licenciamento de livros digitais</p>
+    </div>
+    <div>
+        <h2 style="text-align: center;">Dúvidas</h2>
+        <div class="faq">
+            <div class="question">
+              <div class="container-question">
+                <h3 class="question-text">Como faço para começar?</h3>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="answer">
+                <p>Você pode começar seguindo as instruções fornecidas na seção de início em nosso site.</p>
+              </div>
+            </div>
+            <div class="question">
+              <div class="container-question">
+                <h3 class="question-text">Quais são os métodos de pagamento aceitos?</h3>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="answer">
+                <p>No Kiwify, aceitamos cartão de crédito, PIX e boleto como métodos de pagamento. Assim que você efetuar o pagamento, terá acesso imediato ao seu eBook. Sem esperas, comece a aproveitar o conteúdo imediatamente.  Se você tiver mais perguntas ou precisar de assistência, não hesite em entrar em contato conosco!</p>
+              </div>
+            </div>
+            <div class="question">
+                <div class="container-question">
+                    <h3 class="question-text">Por que devo confiar em vocês?</h3>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="answer">
+                    <p>Sua confiança é essencial. Estamos aqui para reforçar isso:</p>
+                    <ul>
+                        <li><strong>Transparência</strong>: Mantemos comunicação direta, incluindo nosso número de contato e redes sociais, para esclarecer todas as dúvidas.</li>
+                        <br>
+                        <li><strong>Comprometimento</strong>: Nosso foco é oferecer serviços confiáveis e satisfatórios, priorizando sua experiência.</li>
+                        <br>
+                        <li><strong>Compromisso</strong>: Mesmo sendo uma empresa recém-iniciada, estamos comprometidos em fornecer um serviço confiável e de qualidade. Desde o começo queremos construir uma base sólida de clientes satisfeitos, baseada em confiança mútua.</li>
+                    </ul>
+                    <p>Estamos aqui para você, em cada etapa da jornada. Sua segurança e confiança são nossa prioridade.</p>
+                </div>
+            </div>            
+            <!-- Adicione mais perguntas e respostas aqui -->
     </div>
     <div class="ebooks">
         <h2>Explorando Nossos eBooks</h2>
@@ -198,7 +283,7 @@
                 <h4>Estrátegias e hábitos para alcançar o sucesso</h4>
                 <p>"Desvende o código do sucesso pessoal enquanto...</p>
                 <h3>R$25,00</h3>
-                <a href="#">Comprar</a>
+                <a href="./produto.html">Ver mais</a>
             </div>
         </div>
     </main>
@@ -207,7 +292,7 @@
         <div id="container-footer">
             <p>Siga-nos nas redes sociais:</p>
             <div id="social-midia">
-                <a href="https://www.facebook.com/profile.php?id=61550283605215&mibextid=9R9pXO" class="social-midia"><i
+                <a href="https://web.facebook.com/profile.php?id=61550302982832" class="social-midia"><i
                         class="bi bi-facebook"></i></a>
                 <a href="https://instagram.com/booklya_ebook?igshid=MzRlODBiNWFlZA==" class="social-midia"><i class="bi bi-instagram"></i></a>
                 <a href="https://www.youtube.com/channel/UCixpWc1hBObudrNuVBD453g" class="social-midia"><i
@@ -221,4 +306,25 @@
         </div>
     </footer>
 </body>
+<script>
+const questions = document.querySelectorAll('.question');
+
+questions.forEach(question => {
+  question.addEventListener('click', () => {
+    const answer = question.querySelector('.answer');
+    const icon = question.querySelector('.bi');
+
+    answer.classList.toggle('show');
+
+    if (icon.classList.contains('bi-chevron-down')) {
+      icon.classList.remove('bi-chevron-down');
+      icon.classList.add('bi-chevron-up');
+    } else {
+      icon.classList.remove('bi-chevron-up');
+      icon.classList.add('bi-chevron-down');
+    }
+  });
+});
+
+</script>
 </html>

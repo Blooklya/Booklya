@@ -79,9 +79,30 @@ body {
     width: 90%;
     height: 3rem;
 }
-
+#details h2 {
+    margin: 0;
+    margin-bottom: 5px;
+}
 #details button:hover {
 background-color: #0293c4;
+}
+    #description {
+    max-height: 150px;
+    overflow: auto;
+    text-align: justify;
+    font-weight: 500;
+}
+#description::-webkit-scrollbar {
+    width: 5px; /* Largura da barra de rolagem */
+}
+
+#description::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Cor do fundo da trilha da barra de rolagem */
+}
+
+#description::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do "polegar" da barra de rolagem */
+    border-radius: 5px; /* Raio do canto do polegar */
 }
 footer {
     height: 5%;
@@ -201,7 +222,7 @@ footer {
                 </div>
                 <p id="description" style="max-height: 150px; overflow: auto; text-align: justify; font-weight: 500;">Você já se perguntou o que diferencia as pessoas bem-sucedidas das demais ? A resposta está nas suas estratégias e hábitos diários. Se você está pronto para traçar um caminho claro em direção aos seus objetivos e conquistar uma vida de sucesso, este ebook é a ferramenta definitiva para você!</p>
                 <h2 style="text-align: center;">R$ 25,00</h2>
-                <a href="https://pay.kiwify.com.br/UEZ4MO3" style="display: flex;text-decoration: none;"><button><i class="bi bi-cart-fill" style="color: #fff;"></i> Comprar agora</button></a>
+                <a href="https://pay.kiwify.com.br/UEZ4MO3" style="display: flex;text-decoration: none; justify-content: center;"><button><i class="bi bi-cart-fill" style="color: #fff;"></i> Comprar agora</button></a>
             </div>
         </div>
     </div>

@@ -11,10 +11,9 @@
 
         :root {
             --Dark-gray: rgb(29, 29, 29);
-            --Letter-white: #e9e9e9;
-            --blue-color: #214969;
+            --bg-color: #fff;
+            --site-color: #3c3c25;
             --letter-color: #fff;
-            --site-color: beige;
         }
 
         html,
@@ -92,7 +91,7 @@
             border-radius: 5px;
             font-family: 'Montserrat', sans-serif;
             cursor: pointer;
-            background-color: #3c3c25;
+            background-color:  var(--site-color);
             color: var(--letter-color);
             text-align: center;
         }
@@ -125,7 +124,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: #3c3c25;
+            background:  var(--site-color);
             color: var(--letter-color);
             padding: 1rem 0px;
             margin: 0;
@@ -190,7 +189,7 @@
 .container-question {
     display: flex;
     justify-content: space-between;
-    background: #3c3c25;
+    background: var(--site-color);
     color: var(--letter-color);
     padding: 10px;
     border-radius: 10px;
@@ -208,7 +207,7 @@
   font-weight: 500;
 }
 .answer ul li strong {
-    color: #3c3c25;
+    color: var(--site-color);
 }
 .answer p {
     width: 90%;
@@ -232,6 +231,15 @@
     <div>
         <h2 style="text-align: center;">Dúvidas</h2>
         <div class="faq">
+            <div class="question">
+              <div class="container-question">
+                <h3 class="question-text">Como faço para começar?</h3>
+                <i class="bi bi-chevron-down"></i>
+              </div>
+              <div class="answer">
+                <p>Você pode começar seguindo as instruções fornecidas na seção de início em nosso site.</p>
+              </div>
+            </div>
             <div class="question">
               <div class="container-question">
                 <h3 class="question-text">Quais são os métodos de pagamento aceitos?</h3>
@@ -266,6 +274,7 @@
             histórias cativantes e conhecimento valioso.</p>
     </div>
     <main>
+
         <div class="ebook">
             <div class="ebook-img">
                 <img src="./img/capa do livro.png" alt="imagem">
@@ -277,6 +286,18 @@
                 <a href="./produto.html">Ver mais</a>
             </div>
         </div>
+        <div class="ebook">
+            <div class="ebook-img">
+                <img src="./img/livro 2.jpeg" alt="imagem">
+            </div>
+            <div class="ebook-description">
+                <h4>Sabores Saudáveis: 25 Receitas para Emagrecer com Prazer</h4>
+                <p>"Explore 25 receitas escolhidas a dedo para equilibrar sabor...</p>
+                <h3>R$25,00</h3>
+                <a href="./produto2.html">Ver mais</a>
+            </div>
+        </div>
+
     </main>
     <br><br>
     <footer>
